@@ -1,0 +1,16 @@
+config CACHE_SIZE
+	int "Max number of samples that can be stored in the cache"
+    range 1 100
+    default 50
+
+config SAMPLE_INTERVAL_SEC
+	int "Sensor Sampling interval"
+    range 1 3600
+    default 4
+
+config TRANSMIT_INTERVAL_SEC
+	int "Data notification interval"
+    range 1 3600
+    default 2
+
+source "Kconfig.zephyr"
