@@ -6,6 +6,7 @@
 #define TEMP_SAMPLE_LEN 3
 
 
+// REVIEW: why is the __attribute__((packed)) here? what are the benefits of doing that?
 typedef struct __attribute__((packed)) {
     uint32_t imu[IMU_SAMPLE_LEN];
     double temp[TEMP_SAMPLE_LEN];
